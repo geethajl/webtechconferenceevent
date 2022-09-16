@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="constyle.css">
+  <script src="https://kit.fontawesome.com/ef08a44f4e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<section class="head">
+		<div >
+           <div class="logo">
+           	  <h1>Tech<sub>Conference</sub></h1>
+                <h3 class="tagline">August 25th &mdash; Chennai	</h3>
+  
+           	</div>
+
+        
+           	<nav class="navbar navbar-inverse">
+           		
+  
+    <div class="navbar-header" >
+
+           	  
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      	<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="speaker.html">SPEAKERS</a></li>
+        <li><a href="schedule.html">SCHEDULE</a></li>
+        <li><a href="venue.html">VENUE</a></li>
+        <li><a href="#">REGISTER</a></li>
+      </ul>
+
+      
+    </div>
+ 
+       </nav>
+</div>
+</section>
+<section id="register">
+      <div class="container text-center" style="background:  #9e9be9 ">
+
+    <h1>Register</h1>
+
+    <p>Every year we aim to have an unbelievable time, and this year we'd love it for you to join us. Conference passes only cost Rs.500/-, one of the best values you'll find.</p>
+  
+    </div>
+ 
+  <div class="registerform">
+  <div class="container-sm text-center" >
+     
+       <h2 class="text-danger">Purchase a Conference Pass</h2>
+        <h3>Rs.500/- per Pass</h3>
+
+        <p>Purchase your Styles Conference pass. Multiple passes may be purchased within the <br>same order, so feel free to bring a friend or two along. Once your order is finished <br>we&#8217;ll follow up and provide a receipt for your purchase. See you soon!</p>
+
+        <h2>Why Attend?</h2>
+
+        <ul class="why-attend">
+        <li>Over Three world-class speakers</li>
+          <li>One full days of presentations</li>
+          <li>Hosted at The Chennai Ac theatre, a historical landmark</li>
+          <li>August in Chennai is simply amazing</li>
+        </ul>
+    
+     </div>
+<div class="container-sm text-center">
+  <h1 class="text-danger">Bank Details for Paying Registration Fees</h1>
+  <div class="table-responsive" id="table2">          
+  <table class="table  table-hover" >
+    <tbody>
+      <tr class="bg-info">
+        <td>Account Holder <br> Name</td>
+        <td>It Institute <br>of <br>Technology<br>
+         and Science</td>
+        </tr>
+        <tr class="bg-danger">
+        <td>Account Number</td>
+        <td>50200004213888</td>
+    </tr>
+    <tr class="bg-success">
+        <td>IFSC</td>
+        <td>HDFC0002435</td>
+    </tr>
+    <tr class="bg-info">
+        <td>Bank </td>
+        <td>HDFC Bank LTD
+</td>
+    </tr>
+    <tr class="bg-danger">
+        <td>Branch </td>
+        <td>Tousand Light</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+</div>
+  </div>
+
+<div class="container">
+  <h2 class="text-primary">Registration Form</h2>
+  <form action="" id="form" onsubmit="return formvalidate()">
+    <div class="form-group" >
+      <label for="name">Name *</label>
+      <input type="text" class="form-control " id="name" placeholder="Enter name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required><br>
+      <span style="color: red;"id="mail"> </span>
+    </div>
+    <div class="form-group">
+      <label for="num">Mobile Number *</label>
+      <input type="Text" class="form-control" id="num" placeholder="Enter Mobile Number" name="num" required><br>
+      <span style="color: red;"id="number"> </span>
+    
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+      <div class="form-group">
+      <label for="acc">Bank Account Holder Name *</label>
+      <input type="Text" class="form-control" id="acc" placeholder="Eg:John" name="acc"required><br>
+      
+    
+    </div>
+  </div>
+      <div class="col-sm-6">
+      <div class="form-group">
+      <label for="fees">Fees Paid *</label>
+      <input type="Text" class="form-control" id="fees" name="fees"required>
+    </div>
+  </div>
+    
+  </div>
+     <div class="form-group">
+  <label for="pass">Number of passes:</label>
+   <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+     </select>
+ </div>
+ <div class="form-group">
+      <label for="trans">Transaction Id *:</label>
+      <input type="Text" class="form-control" id="trans" name="trans"required>
+    </div>
+    <div class="form-group">
+      <label for="comment">Bank Details*:</label>
+      <textarea class="form-control" rows="5" id="comment"required></textarea>
+    </div>
+  
+        <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</div>
+
+  
+</section>
+<script type="text/javascript">
+  function formvalidate() {
+        var x=document.getElementById('name').value;
+        var y=document.getElementById('email').value;
+        var z=document.getElementById('num').value;
+        var atposition = y.indexOf("@");
+             var dotposition = y.lastIndexOf(".");
+      
+
+         
+        
+      if(atposition < 1 || dotposition<atposition+2||dotposition+2>= y.length )
+      {
+         document.getElementById('mail').innerHTML=" please enter a valid email address";
+                return false;
+        
+
+      }
+     
+
+        else if(isNaN(z))
+        {
+            document.getElementById('number').innerHTML="enter numeric value only";
+            return false;
+
+
+        }
+        
+        else if(z.length!=10)
+       {
+             document.getElementById('number').innerHTML=" The mobilenumber must be 10 digit" ;
+     
+             return false;
+  
+     }
+        
+        
+
+      else{
+        alert("Registered successfully Our Team will be reach you soon through email");
+        return true;
+      }
+
+
+
+      }
+
+
+</script>
+
+<section id="footer">
+
+  <div class="container">
+    <div class="footnav">
+    <h3>© Tech<sub>Conference</sub></h3>
+    </div>
+</div>
+<div class="container bg-3 text-center"> 
+      <div class="row">
+      <div class="col-sm-12" class="text-center"class="credit"> <h4>© Copyright 2022 International Conference on Materials, created by ms. web designer | all rights reserved! </h4></div>
+        </div></div>
+
+
+</section>
